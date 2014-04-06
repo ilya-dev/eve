@@ -1,6 +1,2 @@
 /vendor/
-/sample.php
-/sample2.php
-/phpspec.yml
-/spec/
-/helper.php
+/examples/
