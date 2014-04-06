@@ -1,0 +1,22 @@
+{
+    "name": "ilya/eve",
+    "description": "Doing crazy things with Reflection API and nikic/php-parser",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya S",
+            "email": "public.ilya.s@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Eve\\": "src/Eve/"
+        }
+    },
+    "require": {
+        "nikic/php-parser": "0.9.*"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev"
+    }
+}
