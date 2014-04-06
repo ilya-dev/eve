@@ -15,8 +15,5 @@
     },
     "require": {
         "nikic/php-parser": "0.9.*"
-    },
-    "require-dev": {
-        "phpspec/phpspec": "2.0.*@dev"
     }
 }
