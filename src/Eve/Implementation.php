@@ -1,6 +1,6 @@
 <?php namespace Eve;
 
-class Implement {
+class Implementation {
 
     /**
      * Extend given abstract class and override necessary methods
@@ -8,7 +8,7 @@ class Implement {
      * @param  string $class
      * @return string
      */
-    public function anAbstract($class)
+    public function forAbstract($class)
     {
         return (new Creators\AbstractCreator)->create($class);
     }
@@ -19,7 +19,7 @@ class Implement {
      * @param  string $interface
      * @return string
      */
-    public function anInterface($interface)
+    public function forInterface($interface)
     {
         return (new Creators\InterfaceCreator)->create($interface);
     }

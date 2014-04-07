@@ -1,6 +1,6 @@
 <?php namespace Eve\Builders;
 
-class Build {
+class BuilderFactory {
 
     /**
      * Build a new class

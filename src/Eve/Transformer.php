@@ -1,22 +1,22 @@
 <?php namespace Eve;
 
-use Eve\Builders\Build;
+use Eve\Builders\BuilderFactory;
 use ReflectionMethod, ReflectionParameter;
 use Eve\Builders\MethodBuilder;
 
-class Transform {
+class Transformer {
 
     /**
      * Builder instance
      *
-     * @var Eve\Builders\Build
+     * @var Eve\Builders\BuilderFactory
      */
     protected $builder;
 
     /**
      * The constructor
      *
-     * @param  Eve\Builders\Build|null $builder
+     * @param  Eve\Builders\BuilderFactory|null $builder
      * @return void
      */
     public function __construct(Build $builder = null)
