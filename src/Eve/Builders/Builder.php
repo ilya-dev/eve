@@ -1,6 +1,6 @@
 <?php namespace Eve\Builders;
 
-use PHPParser_PrettyPrinter_Default as PrettyPrinter;
+use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
 
 abstract class Builder {
 

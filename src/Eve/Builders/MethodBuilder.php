@@ -1,6 +1,6 @@
 <?php namespace Eve\Builders;
 
-use PHPParser_BuilderFactory as BuilderFactory;
+use PhpParser\BuilderFactory;
 
 class MethodBuilder extends Builder {
 

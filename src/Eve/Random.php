@@ -11,31 +11,31 @@ class Random {
     {
         $values = [
             // null
-            new \PHPParser_Node_Expr_ConstFetch(
-                new \PHPParser_Node_Name(["null"])
+            new \PhpParser\Node\Expr\ConstFetch(
+                new \PhpParser\Node\Name(["null"])
             ),
             // false
-            new \PHPParser_Node_Expr_ConstFetch(
-                new \PHPParser_Node_Name(["false"])
+            new \PhpParser\Node\Expr\ConstFetch(
+                new \PhpParser\Node\Name(["false"])
             ),
             // 42.7
-            new \PHPParser_Node_Scalar_DNumber(42.7),
+            new \PhpParser\Node\Scalar\DNumber(42.7),
             // 19
-            new \PHPParser_Node_Scalar_LNumber(19),
+            new \PhpParser\Node\Scalar\LNumber(19),
             // new \stdClass
-            new \PHPParser_Node_Expr_New(
-                new \PHPParser_Node_Name(["\stdClass"])
+            new \PhpParser\Node\Expr\New_(
+                new \PhpParser\Node\Name(["\stdClass"])
             ),
             // []
-            new \PHPParser_Node_Expr_Array([]),
+            new \PhpParser\Node\Expr\Array_([]),
             // "foobar"
-            new \PHPParser_Node_Scalar_String("foobar"),
+            new \PhpParser\Node\Scalar\String("foobar"),
             // function() {}
-            new \PHPParser_Node_Expr_Closure(),
+            new \PhpParser\Node\Expr\Closure(),
             // eehh...resource?
         ];
 
-        return $values[array_rand($values)];
+        return $values[\array_rand($values)];
     }
 
 }

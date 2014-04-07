@@ -95,7 +95,7 @@ class Transform {
     {
         $value = \Eve\Random::value();
 
-        $node = new \PHPParser_Node_Stmt_Return($value);
+        $node = new \PhpParser\Node\Stmt\Return_($value);
 
         $method->getBuilder()->addStmt($node);
     }
