@@ -5,10 +5,10 @@ use PhpParser\BuilderFactory;
 class MethodBuilder extends Builder {
 
     /**
-     * The constructor
+     * The constructor.
      *
-     * @param  string $name
-     * @return void
+     * @param string $name
+     * @return MethodBuilder
      */
     public function __construct($name)
     {
@@ -16,9 +16,9 @@ class MethodBuilder extends Builder {
     }
 
     /**
-     * Specify method's visibility mode
+     * Specify the method's visibility mode.
      *
-     * @param  string $mode
+     * @param string $mode
      * @return self
      */
     public function visibility($mode)
@@ -29,9 +29,9 @@ class MethodBuilder extends Builder {
     }
 
     /**
-     * Add a parameter
+     * Add a parameter.
      *
-     * @param  Eve\Builders\ParameterBuilder $parameter
+     * @param ParameterBuilder $parameter
      * @return self
      */
     public function parameter(ParameterBuilder $parameter)

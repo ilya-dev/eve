@@ -5,10 +5,10 @@ use PhpParser\BuilderFactory;
 class ParameterBuilder extends Builder {
 
     /**
-     * The constructor
+     * The constructor.
      *
-     * @param  string $name
-     * @return void
+     * @param string $name
+     * @return ParameterBuilder
      */
     public function __construct($name)
     {
@@ -16,9 +16,9 @@ class ParameterBuilder extends Builder {
     }
 
     /**
-     * Specify default value
+     * Specify the default value.
      *
-     * @param  mixed $value
+     * @param mixed $value
      * @return self
      */
     public function defaultValue($value)
@@ -29,9 +29,9 @@ class ParameterBuilder extends Builder {
     }
 
     /**
-     * Specify type hint
+     * Specify the type hint.
      *
-     * @param  string $typeHint
+     * @param string $typeHint
      * @return self
      */
     public function typeHint($typeHint)

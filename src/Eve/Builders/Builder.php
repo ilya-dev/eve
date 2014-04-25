@@ -5,14 +5,14 @@ use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
 abstract class Builder {
 
     /**
-     * Builder instance
+     * The Builder instance.
      *
-     * @var mixed
+     * @var Builder
      */
     protected $builder;
 
     /**
-     * Get the underlying builder instance
+     * Get the underlying builder instance.
      *
      * @return mixed
      */
@@ -22,7 +22,7 @@ abstract class Builder {
     }
 
     /**
-     * "Pretty print"
+     * "Pretty print" the instance.
      *
      * @return string
      */
@@ -34,7 +34,7 @@ abstract class Builder {
     }
 
     /**
-     * Gets fired when attempting to represent an object as a string
+     * Convert the object to a string.
      *
      * @return string
      */

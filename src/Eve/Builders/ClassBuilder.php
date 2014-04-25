@@ -5,10 +5,10 @@ use PhpParser\BuilderFactory;
 class ClassBuilder extends Builder {
 
     /**
-     * The constructor
+     * The constructor.
      *
-     * @param  string $name
-     * @return void
+     * @param string $name
+     * @return ClassBuilder
      */
     public function __construct($name)
     {
@@ -18,7 +18,7 @@ class ClassBuilder extends Builder {
     /**
      * What should it extend?
      *
-     * @param  dynamic
+     * @param dynamic
      * @return self
      */
     public function extend()
@@ -34,7 +34,7 @@ class ClassBuilder extends Builder {
     /**
      * What should it implement?
      *
-     * @param  dynamic
+     * @param dynamic
      * @return self
      */
     public function implement()
@@ -48,9 +48,9 @@ class ClassBuilder extends Builder {
     }
 
     /**
-     * Add a method
+     * Add a method.
      *
-     * @param  Eve\Builders\MethodBuilder $method
+     * @param MethodBuilder $method
      * @return self
      */
     public function method(MethodBuilder $method)

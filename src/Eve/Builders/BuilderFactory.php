@@ -3,10 +3,10 @@
 class BuilderFactory {
 
     /**
-     * Build a new class
+     * Build a new class.
      *
-     * @param  string $name
-     * @return Eve\Builders\ClassBuilder
+     * @param string $name
+     * @return ClassBuilder
      */
     public function aClass($name)
     {
@@ -14,10 +14,10 @@ class BuilderFactory {
     }
 
     /**
-     * Build a new method
+     * Build a new method.
      *
-     * @param  string $name
-     * @return Eve\Builders\MethodBuilder
+     * @param string $name
+     * @return MethodBuilder
      */
     public function aMethod($name)
     {
@@ -25,10 +25,10 @@ class BuilderFactory {
     }
 
     /**
-     * Build a new parameter
+     * Build a new parameter.
      *
-     * @param  string $name
-     * @return Eve\Builders\ParameterBuilder
+     * @param string $name
+     * @return ParameterBuilder
      */
     public function aParameter($name)
     {
