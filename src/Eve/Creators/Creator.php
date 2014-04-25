@@ -8,41 +8,41 @@ use Eve\Builders\Build;
 abstract class Creator {
 
     /**
-     * ClassRegistry instance
+     * The ClassRegistry instance.
      *
-     * @var Eve\ClassRegistry
+     * @var \Eve\ClassRegistry
      */
     protected $registry;
 
     /**
-     * EvalWorker instance
+     * The EvalWorker instance.
      *
-     * @var Eve\EvalWorker
+     * @var \Eve\EvalWorker
      */
     protected $evalWorker;
 
     /**
-     * Builder instance
+     * The Builder instance.
      *
-     * @var Eve\Builders\Build
+     * @var \Eve\Builders\Build
      */
     protected $builder;
 
     /**
-     * Transformer instance
+     * The Transformer instance.
      *
-     * @var Eve\Transform
+     * @var \Eve\Transform
      */
     protected $transformer;
 
     /**
-     * The constructor
+     * The constructor.
      *
-     * @param  Eve\ClassRegistry|null  $registry
-     * @param  Eve\EvalWorker|null     $evalWorker
-     * @param  Eve\Builders\Build|null $builder
-     * @param  Eve\Transform|null      $transformer
-     * @return void
+     * @param \Eve\ClassRegistry|null $registry
+     * @param \Eve\EvalWorker|null $evalWorker
+     * @param \Eve\Builders\Build|null $builder
+     * @param \Eve\Transform|null $transformer
+     * @return Creator
      */
     public function __construct
         (
@@ -59,10 +59,10 @@ abstract class Creator {
     }
 
     /**
-     * Actually create an implementation
+     * Create an actual implementation.
      *
-     * @param  string $for
-     * @param  string $class
+     * @param string $for
+     * @param string $class
      * @return void
      */
     abstract protected function doCreate($for, $class);
@@ -70,7 +70,7 @@ abstract class Creator {
     /**
      * Create an implementation
      *
-     * @param  string $for
+     * @param string $for
      * @return string
      */
     public function create($for)

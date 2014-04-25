@@ -3,15 +3,16 @@
 class InterfaceCreator extends Creator {
 
     /**
-     * Implement an interface
+     * Implement an interface.
      *
-     * @param  string $for
-     * @param  string $class
+     * @param string $for
+     * @param string $class
      * @return void
      */
     protected function doCreate($for, $class)
     {
-        $class     = $this->builder->aClass($class)->implement($for);
+        $class = $this->builder->aClass($class)->implement($for);
+
         $reflector = new \Eve\Reflector($for);
 
         if ( ! $reflector->isInterface())
