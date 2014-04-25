@@ -7,17 +7,17 @@ use Eve\Builders\MethodBuilder;
 class Transformer {
 
     /**
-     * Builder instance
+     * The Builder instance.
      *
-     * @var Eve\Builders\BuilderFactory
+     * @var Builders\BuilderFactory
      */
     protected $builder;
 
     /**
-     * The constructor
+     * The constructor.
      *
-     * @param  Eve\Builders\BuilderFactory|null $builder
-     * @return void
+     * @param Builders\BuilderFactory|null $builder
+     * @return Transformer
      */
     public function __construct(Build $builder = null)
     {
@@ -25,10 +25,10 @@ class Transformer {
     }
 
     /**
-     * \ReflectionMethod => \Eve\MethodBuilder
+     * \ReflectionMethod => Builders\MethodBuilder.
      *
-     * @param  ReflectionMethod $method
-     * @return Eve\Builders\MethodBuilder
+     * @param \ReflectionMethod $method
+     * @return Builders\MethodBuilder
      */
     public function method(ReflectionMethod $method)
     {
@@ -47,10 +47,10 @@ class Transformer {
     }
 
     /**
-     * \ReflectionParameter => \Eve\Builders\ParameterBuilder
+     * \ReflectionParameter => Builders\ParameterBuilder.
      *
-     * @param  ReflectionParameter $parameter
-     * @return Eve\Builders\ParameterBuilder
+     * @param \ReflectionParameter $parameter
+     * @return Builders\ParameterBuilder
      */
     public function parameter(ReflectionParameter $parameter)
     {
@@ -70,11 +70,11 @@ class Transformer {
     }
 
     /**
-     * Set proper visibility mode
+     * Set a proper visibility mode.
      *
-     * @param  Eve\Builders\MethodBuilder $newMethod
-     * @param  ReflectionMethod $method
-     * @return Eve\Builders\MethodBuilder
+     * @param Builders\MethodBuilder $newMethod
+     * @param \ReflectionMethod $method
+     * @return Builders\MethodBuilder
      */
     protected function setVisibility(MethodBuilder $newMethod, ReflectionMethod $method)
     {
@@ -86,9 +86,9 @@ class Transformer {
     }
 
     /**
-     * Add "return" statement
+     * Add a "return" statement.
      *
-     * @param  Eve\Builders\MethodBuilder
+     * @param Builders\MethodBuilder
      * @return void
      */
     protected function addReturnStatement(MethodBuilder $method)

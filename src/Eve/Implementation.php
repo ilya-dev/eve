@@ -3,9 +3,9 @@
 class Implementation {
 
     /**
-     * Extend given abstract class and override necessary methods
+     * Extend the given abstract class and override all abstract methods.
      *
-     * @param  string $class
+     * @param string $class
      * @return string
      */
     public function forAbstract($class)
@@ -14,9 +14,9 @@ class Implementation {
     }
 
     /**
-     * Implement given interface
+     * Implement the given interface.
      *
-     * @param  string $interface
+     * @param string $interface
      * @return string
      */
     public function forInterface($interface)

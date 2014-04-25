@@ -3,7 +3,7 @@
 class Reflector extends \ReflectionClass {
 
     /**
-     * Get all abstract methods
+     * Get all abstract methods.
      *
      * @return array
      */

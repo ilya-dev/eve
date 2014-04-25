@@ -3,18 +3,18 @@
 class ClassRegistry {
 
     /**
-     * Determine whether a class exists
+     * Determine whether a class exists.
      *
-     * @param  string  $class
+     * @param string $class
      * @return boolean
      */
     public function has($class)
     {
-        return class_exists($class, true);
+        return \class_exists($class, true);
     }
 
     /**
-     * Generate an unique (non-existent) class name
+     * Generate an unique (non-existent) class name.
      *
      * @return string
      */
@@ -22,7 +22,7 @@ class ClassRegistry {
     {
         do
         {
-            $class = 'class_'.uniqid();
+            $class = 'class_'.\uniqid();
         }
         while ($this->has($class));
 

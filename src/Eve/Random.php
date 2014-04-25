@@ -3,7 +3,7 @@
 class Random {
 
     /**
-     * Return a random value
+     * Get a random value.
      *
      * @return mixed
      */

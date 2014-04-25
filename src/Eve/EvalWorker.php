@@ -3,9 +3,9 @@
 class EvalWorker {
 
     /**
-     * Evaluate given code
+     * Evaluate the given code.
      *
-     * @param  string $code
+     * @param string $code
      * @return void
      */
     public function evaluate($code)
